@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/volunteer_recruit.html" }
+  ]
+}
