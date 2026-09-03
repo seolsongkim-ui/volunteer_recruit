@@ -251,8 +251,7 @@
   .role-list--simple li::before { margin-top: 0; border-radius: 50%; width: 8px; height: 8px; }
 
   /* ---------- Benefit cards (goods-grid) ---------- */
-  .goods-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 900px; margin: 0 auto; }
-  @media (max-width: 760px) { .goods-grid { grid-template-columns: repeat(2, 1fr); } }
+  .goods-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; max-width: 640px; margin: 0 auto; }
   @media (max-width: 520px) { .goods-grid { grid-template-columns: 1fr; } }
   .gcard {
     background: #fff; border: 1px solid var(--border-default); padding: 30px 22px; text-align: center;
@@ -690,11 +689,13 @@
           <h3>중식 &amp; 간식 제공</h3>
           <p>현장 활동 중 점심과 간식을 챙겨드려요.</p>
         </div>
+        <!-- 1365 자원봉사 시간 인증 항목 — 확정되면 아래 주석 해제해서 다시 표시 (2026-09-03 요청)
         <div class="gcard">
           <div class="icon">🕒</div>
           <h3>1365 자원봉사 시간</h3>
           <p>인증 여부는 아직 협의 중이에요. 확정되면 안내해드릴게요.</p>
         </div>
+        -->
         <div class="gcard">
           <div class="icon">📜</div>
           <h3>기관 봉사활동 인증서</h3>
