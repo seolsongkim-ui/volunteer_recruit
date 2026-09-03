@@ -272,8 +272,6 @@
   #apply h2 { font-family: var(--font-kr-display); font-weight: 700; font-size: clamp(26px, 3.6vw, 36px); color: #fff; margin: 0 0 18px; }
   #apply p.lead { font-size: 16px; line-height: 1.8; color: rgba(255,255,255,0.92); max-width: 540px; margin: 0 auto 32px; word-break: keep-all; }
   .join-cta { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
-  .open-note { margin-top: 20px; font-size: 13.5px; color: rgba(255,255,255,0.85); }
-  .open-note a { text-decoration: underline; text-underline-offset: 2px; }
   .apply-switch {
     margin-top: 44px; padding-top: 28px; border-top: 1px solid rgba(255,255,255,0.25);
     display: flex; flex-direction: column; align-items: center; gap: 14px;
@@ -711,15 +709,13 @@
         10월 5일에 모집이 마감됩니다. 아래 '신청하기' 버튼을 눌러 신청해주세요.
       </p>
       <div class="join-cta">
-        <!-- TODO: 신청 폼 URL 확정되면 href="여기에 폼 URL" 추가하고 aria-disabled 속성 제거 -->
-        <a class="btn btn--white" aria-disabled="true">신청하기
+        <a class="btn btn--white" href="https://forms.gle/D2xrHarie8gFaYF26" target="_blank" rel="noopener">신청하기
           <svg class="arrow" width="16" height="14" viewBox="0 0 16 14" fill="none" aria-hidden="true">
             <path d="M1 7h13M9 1l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="square" />
           </svg>
         </a>
         <button class="btn btn--ghost-light" id="shareBtn" type="button">함께할 사람에게 알리기</button>
       </div>
-      <p class="open-note">신청서란은 업데이트 예정이에요. 열리면 이 버튼으로 바로 연결돼요.</p>
       <div class="apply-switch">
         <p>걷기·달리기 <strong>참가자</strong>로 참여하고 싶으신가요?</p>
         <!-- TODO: 참가자 신청 페이지 URL 확정되면 href="여기에 URL" 추가하고 aria-disabled 속성 제거 -->
@@ -761,7 +757,7 @@
         </details>
         <details class="faq-item">
           <summary>신청은 언제까지, 어떻게 하나요?</summary>
-          <p>10월 5일에 모집이 마감돼요. 신청서 링크는 준비 중이며, 열리는 대로 이 페이지의 '신청하기' 버튼으로 바로 연결해드릴게요.</p>
+          <p>10월 5일에 모집이 마감돼요. 이 페이지의 '신청하기' 버튼을 누르면 신청서로 바로 연결돼요.</p>
         </details>
       </div>
       <p class="faq-contact">더 궁금한 점은 담당자 한수지에게 문의해주세요 · <a href="mailto:sooji@libertyinnorthkorea.org?subject=%5B%ED%94%84%EB%A6%AC%EB%8D%B4%20%EC%9B%8C%ED%81%AC%26%EB%9F%B0%202026%5D%20%EB%AC%B8%EC%9D%98">sooji@libertyinnorthkorea.org</a> · 010-3702-6644</p>
