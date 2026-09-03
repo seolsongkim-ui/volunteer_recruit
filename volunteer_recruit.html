@@ -832,6 +832,20 @@
       });
     }, { threshold: 0.12 });
     els.forEach(function (e) { io.observe(e); });
+
+    // 메뉴(내부 링크) 클릭으로 이동할 땐 스크롤 애니메이션을 기다리지 않고
+    // 이동할 섹션의 텍스트를 바로 보이게 함 (reveal 지연으로 인한 깜빡임 방지)
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function () {
+        var id = a.getAttribute('href').slice(1);
+        var target = id && document.getElementById(id);
+        if (!target) return;
+        target.querySelectorAll('.reveal').forEach(function (e) {
+          e.classList.add('in');
+          io.unobserve(e);
+        });
+      });
+    });
   })();
 
   // ---------- floating CTA (hero를 지나면 등장, #apply에 닿으면 숨김) ----------
